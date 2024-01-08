@@ -17,6 +17,7 @@
     <button id="myButton">Click me</button>
 </body>
 </html>
+
 // script.js
 document.addEventListener('DOMContentLoaded', function() {
     var myButton = document.getElementById('myButton');
