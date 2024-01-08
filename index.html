@@ -12,7 +12,31 @@
 </body>
 </html>
     
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <!-- Link to your JavaScript file -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <!-- Add an element with an ID for JavaScript to target -->
+    <button id="myButton">Click me</button>
+</body>
+</html>
+
 // script.js
-function goToYouTube() {
-    window.location.href = 'https://www.youtube.com/';
-}
+// Wait for the HTML document to be fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+    // Get the button element by its ID
+    var myButton = document.getElementById('myButton');
+
+    // Add a click event listener to the button
+    myButton.addEventListener('click', function() {
+        // Function to be executed when the button is clicked
+        alert('Button Clicked!');
+    });
+});
